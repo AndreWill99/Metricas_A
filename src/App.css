@@ -1,27 +1,117 @@
 /* App.css */
-.App {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.death-count-value, 
+.birth-count-value,
+.metric-card p { 
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.death-count-value:hover,
+.birth-count-value:hover,
+.metric-card p:hover {
+  color: #333; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f9;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #0077cc;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #444;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+.metric-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  gap: 20px; /* Space between cards */
+  margin: 20px 0;
+}
+
+.metric-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.metric-card h2 {
+  color: #17009c;
+  margin-bottom: 10px;
+}
+
+.metric-card p {
+  font-size: 10%;
+  font-weight: bold;
+  color: #555; 
+}
+
+
+.metric-card h2 {
+  color: #0077cc;
+  margin-bottom: 15%;
+}
+
+footer {
+  margin-top: 40%;
+  text-align: center;
+}
+
+footer h3 {
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  margin-bottom: 5px;
+}
+
+footer a {
+  color: #007BFF; /* Blue link color */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) { 
+  .metric-section {
+    grid-template-columns: 1fr; /* Single column layout on smaller screens */
   }
-  
-  .header {
-    border-radius: 2cap;
- 
-    padding: 1rem;
-    color: #2e4574;
+
+  .death-count-container,
+  .birth-count-container,
+  .world-population-container {
+    width: 100%; /* Cards take full width */
   }
-  
-  .main {
-    width: 100%;
-    max-width: 800px;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+}

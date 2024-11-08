@@ -1,59 +1,27 @@
 /* DeathCount.css */
-.death-count {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .population {
-    background-color: #ffffff;
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .population h2 {
-    font-size: 1.5rem;
-    color: #333;
-  }
-  
-  .population p {
-    font-size: 2rem;
-    color: #007bff;
-  }
-  
-  .stats {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .stats-card {
-    background-color: #ffffff;
-    width: 200px;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .stats-card h3 {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 0.5rem;
-  }
-  
-  .stats-card p {
-    font-size: 1rem;
-    color: #555;
-  }
-  
-  .stats-card strong {
-    color: #007bff;
-    font-size: 1.2rem;
-  }
-  
+
+.death-count-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffe6e6;
+  border: 1px solid #ffcccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.death-count-label {
+  font-size: 1.5rem;
+  color: #d80000;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.death-count-value {
+  font-size: 1.8rem;
+  color: #b30000;
+  margin-top: 10px;
+}

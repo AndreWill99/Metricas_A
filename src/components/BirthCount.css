@@ -1,0 +1,23 @@
+/* BirthCount.css */
+
+.birth-count-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+  
+  .birth-count-label {
+    font-size: 1.5rem;
+    color: #005b99;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .birth-count-value {
+    font-size: 1.8rem;
+    color: #003366;
+    margin-top: 10px;
+  }
+  
